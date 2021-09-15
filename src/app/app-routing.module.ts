@@ -3,14 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 //import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { DetailComponent } from 'ngx-hero-detail';
+import { HeroDetailWrapperComponent } from './hero-detail-wrapper/hero-detail-wrapper.component';
 
 
 const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  { path: 'detail/:id', component: DetailComponent}
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'detail/:id', component: HeroDetailWrapperComponent }
 ];
 
 @NgModule({
