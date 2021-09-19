@@ -24,7 +24,12 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "lib-favicon.ico",
+                "input": "node_modules/ngx-hero-detail/",
+                "output": ""
+              }
             ],
             "styles": [
               "src/styles.css"
